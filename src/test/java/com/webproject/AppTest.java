@@ -35,7 +35,8 @@ public class AppTest {
         );
         context = browser.newContext();
         page = context.newPage();
-        page.setDefaultTimeout(60000);
+        page.setDefaultNavigationTimeout(90000); // 90 sekund na načtení úvodní stránky webu
+        page.setDefaultTimeout(60000);           // 60 sekund na objevení jakéhokoliv tlačítka/pole
     }
 
 
