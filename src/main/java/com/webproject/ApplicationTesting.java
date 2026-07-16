@@ -80,20 +80,36 @@ public class ApplicationTesting {
         // Zaměříme kontejner, který v sobě obsahuje texty vašeho menu
         Locator specificMenu = page.locator("div:has-text('NovýSložkaDokumentTabulka')").last();
         
-        // Vykreslení a stabilizace menu
+        // Vykreslení a stabilizace prvního menu
         specificMenu.waitFor(new com.microsoft.playwright.Locator.WaitForOptions()
             .setState(com.microsoft.playwright.options.WaitForSelectorState.VISIBLE));
         
-        // Najedeme myší na text pouze uvnitř tohoto zaměřeného menu
+        // 1. Najedeme myší na "Nový"
         specificMenu.getByText(text1).first().hover();
 
+        // 2. KLÍČOVÝ KROK PRO STABILITU: Vytvoříme lokátor pro "Dokument" 
+        // a počkáme, až ho React v DOM struktuře plně vykreslí jako VISIBLE (viditelný)
+        Locator elementText2 = specificMenu.getByText(text2).first();
+        elementText2.waitFor(new com.microsoft.playwright.Locator.WaitForOptions()
+            .setState(com.microsoft.playwright.options.WaitForSelectorState.VISIBLE)
+            .setTimeout(5000)); // Počkáme až 5 sekund, než animace skončí
+
+        // 3. JISTOTA: Uděláme kratičkou pauzu 300ms, aby se kurzor ustálil a menu se nehýbalo
+        page.waitForTimeout(300);
+
+        // 4. Najedeme kurzorem na "Dokument"
+        System.out.println("Najíždím myší na '" + text2 + "'...");
+        elementText2.hover();
+
+        // 5. Vyfotíme stav, kdy myš reálně stojí na položce Dokument
         TakeScreenshot takeScreenshot = new TakeScreenshot(page);
         takeScreenshot.takeScreenshot("target/site/homepage_hovered_inside_menu.png");
 
-        // Klikneme myší na text konkrétní menu pouze uvnitř tohoto zaměřeného menu
-        System.out.println("Klikneme myší na '" + text2 + "' uvnitř kontextového menu.");
-        specificMenu.getByText(text2).first().click();
+        // 6. Provedeme kliknutí
+        System.out.println("Klikám na '" + text2 + "'.");
+        elementText2.click();
     }
+
 
     /**
      * Vyhledá textové pole podle zadaného lokátoru a vyplní do něj požadovaný název.
