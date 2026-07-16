@@ -28,6 +28,9 @@ public class LoginPage {
     public void navigateTo(String hostname) {
         System.out.println("Otevírám Chrome a přicházím na: " + hostname);
         page.navigate(hostname);
+
+        TakeScreenshot takeScreenshot = new TakeScreenshot(page);
+        takeScreenshot.takeScreenshot("target/site/login_page1.png");
         
         // STABILIZACE PRO CLOUD: Dáme robotovi v Linuxu až 100 sekund, 
         // než se pole na pomalejším serveru poprvé objeví a aktivuje.
