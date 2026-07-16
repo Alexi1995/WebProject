@@ -32,10 +32,13 @@ jobs:
         mvn compile
         mvn exec:java -e -Dexec.mainClass=com.microsoft.playwright.CLI -Dexec.args="install --with-deps"
 
-    # 4. Spuštění testu na virtuální obrazovce (Xvfb simuluje headless=false)
+    # 4. Spuštění testu na virtuální obrazovce (Vynucujeme češtinu)
     - name: Run Playwright Tests with Virtual Screen
+      env:
+        LANG: cs_CZ.UTF-8
       run: |
         xvfb-run --auto-servernum --server-args="-screen 0 1280x1024x24" mvn clean test -Dtest=AppTest -Dheadless=false surefire-report:report -DlinkXRef=false
+
 
     # 5. Bezpečné uložení vygenerovaného HTML reportu a screenshotů
     - name: Upload Test Report & Screenshots
