@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.webproject.AppTest" time="58.058" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.webproject.AppTest" time="52.397" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="26"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -13,7 +13,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="CZ"/>
     <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/26.0.1/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/dasadanilova/Desktop/WebProject/target/surefire/surefirebooter-20260716160740627_3.jar /Users/dasadanilova/Desktop/WebProject/target/surefire 2026-07-16T16-07-40_581-jvmRun1 surefire-20260716160740627_1tmp surefire_0-20260716160740627_2tmp"/>
+    <property name="sun.java.command" value="/Users/dasadanilova/Desktop/WebProject/target/surefire/surefirebooter-20260716163047036_3.jar /Users/dasadanilova/Desktop/WebProject/target/surefire 2026-07-16T16-30-46_995-jvmRun1 surefire-20260716163047036_1tmp surefire_0-20260716163047036_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="test" value="AppTest"/>
@@ -31,7 +31,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/dasadanilova/Desktop/WebProject/target/surefire/surefirebooter-20260716160740627_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/dasadanilova/Desktop/WebProject/target/surefire/surefirebooter-20260716163047036_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="26.0.1"/>
@@ -62,7 +62,7 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="70.0"/>
   </properties>
-  <testcase name="testLoginWorkflow" classname="com.webproject.AppTest" time="58.048">
+  <testcase name="testLoginWorkflow" classname="com.webproject.AppTest" time="52.386">
     <system-out><![CDATA[Otevírám Chrome a přicházím na: https://iwqa01.onice.io
 Dělám screenshot: target/site/chrome_login.png
 Vyplňuji Uživatelské jméno: alexandr@iwqa01.onice.io
@@ -76,7 +76,7 @@ Dělám screenshot: target/site/chrome_after_password.png
 Čekám, až ze stránky zmizí text: Spouštění
 Dělám screenshot: target/site/chrome_loading_finished.png
 Kontroluji přítomnost domovské stránky (.react-grid-layout)...
-.react-grid-layout je nalezen, stránka je v pořádku. Pokračuji.
+Layout nenalezen. Klikám v menu na: [id="gui\.frm_main\.filter\#D"]
 Dělám screenshot: target/site/chrome_homepage.png
 Klikám PRAVÝM tlačítkem na CSS selektor: .react-grid-layout
 Dělám screenshot: target/site/homepage_right_clicked.png

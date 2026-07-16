@@ -29,9 +29,12 @@ public class LoginPage {
         System.out.println("Otevírám Chrome a přicházím na: " + hostname);
         page.navigate(hostname);
         
-        // Stabilizační prvek: počkáme, až se vstupní pole opravdu objeví
+        // STABILIZACE PRO CLOUD: Dáme robotovi v Linuxu až 100 sekund, 
+        // než se pole na pomalejším serveru poprvé objeví a aktivuje.
         page.getByLabel(userNameLabel, new Page.GetByLabelOptions().setExact(false))
-            .waitFor(new Locator.WaitForOptions().setState(com.microsoft.playwright.options.WaitForSelectorState.VISIBLE));
+            .waitFor(new com.microsoft.playwright.Locator.WaitForOptions()
+                .setTimeout(100000) // 100 sekund pro první start v pipeline
+                .setState(com.microsoft.playwright.options.WaitForSelectorState.VISIBLE));
     }
 
     /**
