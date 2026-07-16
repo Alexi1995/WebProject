@@ -1,0 +1,56 @@
+-J-Duser.language=
+-J-Duser.country=
+@options
+@packages
+--no-fonts
+-classpath
+'/Users/dasadanilova/.m2/repository/com/microsoft/playwright/playwright/1.49.0/playwright-1.49.0.jar:/Users/dasadanilova/.m2/repository/com/google/code/gson/gson/2.11.0/gson-2.11.0.jar:/Users/dasadanilova/.m2/repository/com/google/errorprone/error_prone_annotations/2.27.0/error_prone_annotations-2.27.0.jar:/Users/dasadanilova/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/dasadanilova/.m2/repository/com/microsoft/playwright/driver/1.49.0/driver-1.49.0.jar:/Users/dasadanilova/.m2/repository/com/microsoft/playwright/driver-bundle/1.49.0/driver-bundle-1.49.0.jar:/Users/dasadanilova/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.2/junit-jupiter-5.10.2.jar:/Users/dasadanilova/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/Users/dasadanilova/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/Users/dasadanilova/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/dasadanilova/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar'
+-encoding
+'UTF-8'
+-protected
+--release
+17
+-sourcepath
+'/Users/dasadanilova/Desktop/WebProject/src/main/java:/Users/dasadanilova/Desktop/WebProject/target/generated-sources/annotations'
+-author
+-bottom
+'Copyright &#169; 2026. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'/Users/dasadanilova/Desktop/WebProject/target/reports/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'playwrightapp 1.0-SNAPSHOT API'
+-use
+-version
+-windowtitle
+'playwrightapp 1.0-SNAPSHOT API'
+com.webproject
+/Users/dasadanilova/.m2/repository/com/microsoft/playwright/playwright/1.49.0/playwright-1.49.0.jar = 1732230610000
+/Users/dasadanilova/.m2/repository/com/google/code/gson/gson/2.11.0/gson-2.11.0.jar = 1716144881000
+/Users/dasadanilova/.m2/repository/com/google/errorprone/error_prone_annotations/2.27.0/error_prone_annotations-2.27.0.jar = 1714146969000
+/Users/dasadanilova/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar = 1688646332000
+/Users/dasadanilova/.m2/repository/com/microsoft/playwright/driver/1.49.0/driver-1.49.0.jar = 1732230589000
+/Users/dasadanilova/.m2/repository/com/microsoft/playwright/driver-bundle/1.49.0/driver-bundle-1.49.0.jar = 1732230603000
+/Users/dasadanilova/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.2/junit-jupiter-5.10.2.jar = 1707035724000
+/Users/dasadanilova/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar = 1707035721000
+/Users/dasadanilova/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar = 1707035719000
+/Users/dasadanilova/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar = 1624798415000
+/Users/dasadanilova/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar = 1707035725000
+/Users/dasadanilova/Desktop/WebProject/src/main/java = 1784114617961
+/Users/dasadanilova/Desktop/WebProject/target/generated-sources/annotations = 1784210697221
+/Users/dasadanilova/Desktop/WebProject/target/reports/apidocs/tag-search-index.js = 1784210807795
+/Users/dasadanilova/Desktop/WebProject/target/reports/apidocs/overview-tree.html = 1784210807789
+/Users/dasadanilova/Desktop/WebProject/target/reports/apidocs/module-search-index.js = 1784210807795
+/Users/dasadanilova/Desktop/WebProject/target/reports/apidocs/index.html = 1784210807801
+/Users/dasadanilova/Desktop/WebProject/target/reports/apidocs/package-search-index.js = 1784210807795
+/Users/dasadanilova/Desktop/WebProject/target/reports/apidocs/index-all.html = 1784210807800
+/Users/dasadanilova/Desktop/WebProject/target/reports/apidocs/allpackages-index.html = 1784210807794
+/Users/dasadanilova/Desktop/WebProject/target/reports/apidocs/member-search-index.js = 1784210807795
+/Users/dasadanilova/Desktop/WebProject/target/reports/apidocs/help-doc.html = 1784210807802
+/Users/dasadanilova/Desktop/WebProject/target/reports/apidocs/element-list = 1784210807779
+/Users/dasadanilova/Desktop/WebProject/target/reports/apidocs/search.html = 1784210807800
+/Users/dasadanilova/Desktop/WebProject/target/reports/apidocs/allclasses-index.html = 1784210807794
+/Users/dasadanilova/Desktop/WebProject/target/reports/apidocs/type-search-index.js = 1784210807795
