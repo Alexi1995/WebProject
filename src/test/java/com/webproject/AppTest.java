@@ -25,7 +25,7 @@ public class AppTest {
         browser = playwright.chromium().launch(
         new BrowserType.LaunchOptions()
             .setHeadless(false)
-            .setChannel("chrome")
+            //.setChannel("chrome")
             // TYTO ARGUMENTY ZRYCHLÍ VYBARVOVÁNÍ STRÁNEK NA MACU:
             .setArgs(java.util.Arrays.asList(
                 "--disable-gpu", 
