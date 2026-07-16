@@ -25,6 +25,10 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
         cache: 'maven'
+    - name: Configure Czech Locale
+      run: |
+        sudo locale-gen cs_CZ.UTF-8
+        sudo update-locale LANG=cs_CZ.UTF-8
 
     # 3. Stažení závislostí a instalace prohlížečů Playwright
     - name: Install Playwright Browsers
