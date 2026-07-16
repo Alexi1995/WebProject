@@ -35,6 +35,7 @@ public class AppTest {
         );
         context = browser.newContext();
         page = context.newPage();
+        page.setDefaultTimeout(60000);
     }
 
 
@@ -119,7 +120,7 @@ public class AppTest {
 
         // Poznámka: page.pause() je pro automatický report vynechán, 
         // aby se test v CI/CD terminálu nezasekl. Pokud ho chcete, odkomentujte:
-        page.pause();
+        //page.pause();
     }
 
     @AfterEach
