@@ -10,6 +10,8 @@ import com.microsoft.playwright.options.WaitForSelectorState;
 /**
  * Objektová reprezentace přihlašovací stránky (Page Object Model).
  * Poskytuje metody pro navigaci, vyplňování formulářů a interakci s prvky během testování aplikace po přihlášení.
+ * @author Alexandr
+ * @version 1.0
  */
 public class ApplicationTesting {
     private final Page page;

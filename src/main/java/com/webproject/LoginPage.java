@@ -6,6 +6,8 @@ import com.microsoft.playwright.options.AriaRole;
 /**
  * Objektová reprezentace přihlašovací stránky (Page Object Model).
  * Poskytuje metody pro navigaci, vyplňování formulářů a interakci s prvky během přihlašování.
+ * @author Alexandr
+ * @version 1.0
  */
 public class LoginPage {
     private final Page page;

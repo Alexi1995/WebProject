@@ -5,6 +5,8 @@ import org.junit.jupiter.api.*;
 /**
  * Hlavní třída pro automatizované testování webové aplikace Onice.
  * Obsahuje workflow pro přihlášení uživatele pomocí Playwright.
+ * @author Alexandr
+ * @version 1.0
  */
 public class AppTest {
     /**
@@ -25,7 +27,7 @@ public class AppTest {
         browser = playwright.chromium().launch(
         new BrowserType.LaunchOptions()
             .setHeadless(false)
-            //.setChannel("chrome")
+            //.setChannel("chrome") - volitelně lze použít konkrétní kanál prohlížeče (např. "chrome" nebo "msedge")
             // TYTO ARGUMENTY ZRYCHLÍ VYBARVOVÁNÍ STRÁNEK NA MACU:
             .setArgs(java.util.Arrays.asList(
                 "--disable-gpu", 
