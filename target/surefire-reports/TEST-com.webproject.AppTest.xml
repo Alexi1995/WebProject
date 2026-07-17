@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.webproject.AppTest" time="55.553" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.webproject.AppTest" time="49.551" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="26"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -13,7 +13,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="CZ"/>
     <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/26.0.1/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/dasadanilova/Desktop/WebProject/target/surefire/surefirebooter-20260716214116432_3.jar /Users/dasadanilova/Desktop/WebProject/target/surefire 2026-07-16T21-41-16_396-jvmRun1 surefire-20260716214116432_1tmp surefire_0-20260716214116432_2tmp"/>
+    <property name="sun.java.command" value="/Users/dasadanilova/Desktop/WebProject/target/surefire/surefirebooter-20260717092039327_3.jar /Users/dasadanilova/Desktop/WebProject/target/surefire 2026-07-17T09-20-39_276-jvmRun1 surefire-20260717092039327_1tmp surefire_0-20260717092039327_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="test" value="AppTest"/>
@@ -31,7 +31,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/dasadanilova/Desktop/WebProject/target/surefire/surefirebooter-20260716214116432_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/dasadanilova/Desktop/WebProject/target/surefire/surefirebooter-20260717092039327_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="26.0.1"/>
@@ -62,7 +62,7 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="70.0"/>
   </properties>
-  <testcase name="testLoginWorkflow" classname="com.webproject.AppTest" time="55.544">
+  <testcase name="testLoginWorkflow" classname="com.webproject.AppTest" time="49.542">
     <system-out><![CDATA[Otevírám Chrome a přicházím na: https://iwqa01.onice.io
 Dělám screenshot: target/site/login_page1.png
 Dělám screenshot: target/site/chrome_login.png
@@ -74,7 +74,7 @@ Vyplňuji Heslo: tl0kvvgM
 Dělám screenshot: target/site/chrome_password_filled.png
 Klikám na tlačítko: Přihlásit
 Dělám screenshot: target/site/chrome_after_password.png
-Čekám, až ze stránky zmizí text: Spouštění
+Text 'Načítání' v dokumentu úspěšně zmizel.
 Dělám screenshot: target/site/chrome_loading_finished.png
 Kontroluji přítomnost domovské stránky (.react-grid-layout)...
 .react-grid-layout je nalezen, stránka je v pořádku. Pokračuji.
@@ -89,8 +89,7 @@ Dělám screenshot: target/site/homepage_menu_clicked.png
 Hledám pole s placeholderem 'Zadejte jméno a vytvořte' a simuluji psaní: test_document
 Dělám screenshot: target/site/doc_name_filled.png
 Klikám na tlačítko: Vytvořit dokument
-Dělám screenshot: target/site/file_doc_created.png
-Čekám, až ze stránky zmizí text: Spouštění
+Text 'Načítání' v dokumentu úspěšně zmizel.
 Dělám screenshot: target/site/file_doc_ready.png
 Zavírám dokument kliknutím na tlačítko X.
 Dělám screenshot: target/site/file_doc_closed.png

@@ -1,7 +1,10 @@
 package com.webproject;
 
+import java.util.regex.Pattern;
+
 import com.microsoft.playwright.*;
 import com.microsoft.playwright.options.AriaRole;
+import com.microsoft.playwright.options.WaitForSelectorState;
 
 
 /**
@@ -24,13 +27,12 @@ public class ApplicationTesting {
      * @param text Text, na jehož zmizení chceme počkat (např. "Spouštění")
      */
     public void waitForTextToDisappear(String text) {
-        System.out.println("Čekám, až ze stránky zmizí text: " + text);
-        
-        // Použijeme textový lokátor a počkáme na stav HIDDEN
-        page.locator("text=" + text).waitFor(
-            new Locator.WaitForOptions().setState(com.microsoft.playwright.options.WaitForSelectorState.HIDDEN)
-        );
-        page.waitForTimeout(5000); // Počkáme 5 sekund, aby se stránka stabilizovala
+        page.locator("[id='gui.doc#container']")
+            .getByText(Pattern.compile(text, Pattern.CASE_INSENSITIVE))
+            .waitFor(new Locator.WaitForOptions().setState(WaitForSelectorState.HIDDEN));
+    
+        System.out.println("Text '" + text + "' v dokumentu úspěšně zmizel.");
+        page.waitForTimeout(4000); // Počkáme 4 sekundy, aby se stránka stabilizovala
     }
 
     /**

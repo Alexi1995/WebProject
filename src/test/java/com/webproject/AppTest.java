@@ -54,8 +54,7 @@ public class AppTest {
         String loginButtonLabel = "Přihlásit";
         String userNameLabel = "Uživatelské jméno";
         String passwordLabel = "Heslo";
-        String loading = "Spouštění";
-        String starting = "Spouštění";
+        String starting = "Načítání";
         String homePageMenuToClick = "[id=\"gui\\.frm_main\\.filter\\#D\"]";
         String rightClickSelector = ".react-grid-layout";
         String rightClickMenuToHover = "Nový";
@@ -88,7 +87,7 @@ public class AppTest {
         takeScreenshot.takeScreenshot("target/site/chrome_after_password.png");
 
         /** Krok 6: Čekání na dokončení načítání */
-        applicationTesting.waitForTextToDisappear(loading);
+        applicationTesting.waitForTextToDisappear(starting);
         takeScreenshot.takeScreenshot("target/site/chrome_loading_finished.png");
 
         /** Krok 7: Ověření domovské stránky */
@@ -105,7 +104,6 @@ public class AppTest {
 
         /** Krok 10: Kliknutí na prvek v menu podle textu a kliknutí na tlačítko pro vytvoření dokumentu/tabulky/prezentace */
         applicationTesting.fillNameAndPressButton(fillLocatorOfName, fileNameToFill);
-        takeScreenshot.takeScreenshot("target/site/file_doc_created.png");
 
         /** Krok 11: Počkáme až zmizí Načítání */
         applicationTesting.waitForTextToDisappear(starting);
